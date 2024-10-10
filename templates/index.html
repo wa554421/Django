@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Website</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">MyWebsite</div>
+        <ul class="nav-links">
+            <li><a href="http://127.0.0.1:8000">Home</a></li>
+            <li><a href="http://127.0.0.1:8000/about">About</a></li>
+            <li><a href="http://127.0.0.1:8000/services">Services</a></li>
+            <li><a href="http://127.0.0.1:8000/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Website</h1>
+            <p>Your journey to a beautiful web presence starts here.</p>
+            <a href="#services" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="services" class="products">
+        <h2>Our Services</h2>
+        <div class="product-grid">
+            <div class="product">
+                <h3>Service 1</h3>
+                <p>Description of service 1.</p>
+            </div>
+            <div class="product">
+                <h3>Service 2</h3>
+                <p>Description of service 2.</p>
+            </div>
+            <div class="product">
+                <h3>Service 3</h3>
+                <p>Description of service 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+    </footer>
+</body>
+</html>
